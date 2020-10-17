@@ -6,16 +6,13 @@ import 'firebase/storage';
 import 'firebase/auth';
 import { firebaseConfig } from '@/firebaseConfig';
 
-Vue.use(Vuex);
-
 firebase.initializeApp(firebaseConfig);
+const storage = firebase.storage().ref();
 
-const db = firebase.firestore();
-const { storage } = firebase;
+Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-    db,
     firebase,
     storage,
   },
