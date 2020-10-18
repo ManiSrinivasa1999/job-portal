@@ -1,5 +1,19 @@
 <template>
-  <button @click="trySampleRequest();">Try sample request</button>
+  <v-row
+    align="center"
+    justify="space-around"
+    class="btn-top"
+  >
+    <v-btn
+      tile
+      @click="trySampleRequest();"
+    >
+      Sign in with Google
+      <!-- <v-icon right>
+        fab fa-google-plus-g
+      </v-icon> -->
+    </v-btn>
+  </v-row>
 </template>
 
 <script>
@@ -50,7 +64,7 @@ export default {
         // eslint-disable-next-line @typescript-eslint/camelcase
         client_id: '626064367386-2eaagap3k18j6846cb80a7tamo5h85gb.apps.googleusercontent.com',
         // eslint-disable-next-line @typescript-eslint/camelcase
-        redirect_uri: 'https://job-portal-flipr.firebaseapp.com/__/auth/handler',
+        redirect_uri: 'http://localhost:8080/access-token/',
         // eslint-disable-next-line @typescript-eslint/camelcase
         response_type: 'token',
         scope: 'https://www.googleapis.com/auth/drive.metadata.readonly',
@@ -78,5 +92,9 @@ export default {
 </script>
 
 <style>
+
+.btn-top {
+  padding: 50vh 0 50vh 0 !important;
+}
 
 </style>

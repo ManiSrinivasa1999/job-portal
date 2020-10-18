@@ -1,7 +1,15 @@
 import Vue from 'vue';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import {} from '@fortawesome/free-solid-svg-icons';
-import {} from '@fortawesome/free-brands-svg-icons';
+import {
+  faArrowDown,
+  faArrowUp,
+  faCaretDown,
+  faChevronDown,
+  faChevronLeft,
+  faChevronRight,
+  faChevronUp,
+} from '@fortawesome/free-solid-svg-icons';
+import { faGooglePlusG } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import App from './App.vue';
 import './registerServiceWorker';
@@ -9,7 +17,16 @@ import router from './router';
 import store from './store';
 import vuetify from './plugins/vuetify';
 
-library.add();
+library.add(
+  faGooglePlusG,
+  faArrowUp,
+  faArrowDown,
+  faChevronDown,
+  faCaretDown,
+  faChevronUp,
+  faChevronLeft,
+  faChevronRight,
+);
 
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 
