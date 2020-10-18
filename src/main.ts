@@ -3,6 +3,7 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import {
   faArrowDown,
   faArrowUp,
+  faBars,
   faCaretDown,
   faChevronDown,
   faChevronLeft,
@@ -19,6 +20,7 @@ import vuetify from './plugins/vuetify';
 
 library.add(
   faGooglePlusG,
+  faBars,
   faArrowUp,
   faArrowDown,
   faChevronDown,

@@ -18,6 +18,14 @@ const routes: Array<RouteConfig> = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "Signin" */ '../views/Signin.vue'),
   },
+  {
+    path: '/register',
+    name: 'Register',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "Signin" */ '../views/Register.vue'),
+  },
 ];
 
 const router = new VueRouter({
