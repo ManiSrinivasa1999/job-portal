@@ -9,17 +9,23 @@ import { firebaseConfig } from '@/firebaseConfig';
 firebase.initializeApp(firebaseConfig);
 const storage = firebase.storage().ref();
 const db = firebase.firestore();
+const { auth } = firebase;
 
 Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
     db,
+    auth,
     firebase,
     storage,
-    accessToken: null,
+    user: null,
   },
-  mutations: {},
+  mutations: {
+    setUser(state, user) {
+      state.user = user;
+    },
+  },
   actions: {},
   modules: {},
 });

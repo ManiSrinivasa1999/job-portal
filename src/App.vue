@@ -41,12 +41,30 @@
           </template>
           <v-list no-action>
             <v-list-item
-              v-for="button in buttons"
-              :key="button.label"
-              :to="button.url"
+              to="/"
             >
               <v-list-item-content>
-                <v-list-item-title>{{ button.label }}</v-list-item-title>
+                <v-list-item-title>
+                  Home
+                </v-list-item-title>
+              </v-list-item-content>
+            </v-list-item>
+            <v-list-item
+              to="/signin"
+            >
+              <v-list-item-content>
+                <v-list-item-title>
+                  Signin
+                </v-list-item-title>
+              </v-list-item-content>
+            </v-list-item>
+            <v-list-item
+              to="/register"
+            >
+              <v-list-item-content>
+                <v-list-item-title>
+                  Register
+                </v-list-item-title>
               </v-list-item-content>
             </v-list-item>
           </v-list>

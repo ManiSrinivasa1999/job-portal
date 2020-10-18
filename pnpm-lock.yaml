@@ -7,6 +7,7 @@ dependencies:
   axios: 0.20.0
   core-js: 3.6.5
   firebase: 7.24.0
+  firebaseui: 4.7.0_firebase@7.24.0
   papaparse: 5.3.0
   register-service-worker: 1.7.1
   vue: 2.6.12
@@ -4530,6 +4531,10 @@ packages:
     dev: true
     resolution:
       integrity: sha512-ZIzRpLJrOj7jjP2miAtgqIfmzbxa4ZOr5jJc601zklsfEx9oTzmmj2nVpIPRpNlRTIh8lc1kyViIY7BWSGNmKw==
+  /dialog-polyfill/0.4.10:
+    dev: false
+    resolution:
+      integrity: sha512-j5yGMkP8T00UFgyO+78OxiN5vC5dzRQF3BEio+LhNvDbyfxWBsi3sfPArDm54VloaJwy2hm3erEiDWqHRC8rzw==
   /diff/3.5.0:
     dev: true
     engines:
@@ -5663,6 +5668,16 @@ packages:
       node: ^8.13.0 || >=10.10.0
     resolution:
       integrity: sha512-j6jIyGFFBlwWAmrlUg9HyQ/x+YpsPkc/TTkbTyeLwwAJrpAmmEHNPT6O9xtAnMV4g7d3RqLL/u9//aZlbY4rQA==
+  /firebaseui/4.7.0_firebase@7.24.0:
+    dependencies:
+      dialog-polyfill: 0.4.10
+      firebase: 7.24.0
+      material-design-lite: 1.3.0
+    dev: false
+    peerDependencies:
+      firebase: '>=7.11.0'
+    resolution:
+      integrity: sha512-oJ0BXBL1y/5+qejYnodtE5sbH7HhSRcH+JGlR7jd7bw54WRKMgcsKcTwLD5xxdSnJg+LRPg0fK500/9Xgk4ocQ==
   /flat-cache/2.0.1:
     dependencies:
       flatted: 2.0.2
@@ -7915,6 +7930,12 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-7Nyo8TFE5mDxtb1B8S80edmN+48=
+  /material-design-lite/1.3.0:
+    dev: false
+    engines:
+      node: '>=0.12.0'
+    resolution:
+      integrity: sha1-0ATOP+6Zoe63Sni4oyUTSl8RcdM=
   /md5.js/1.3.5:
     dependencies:
       hash-base: 3.1.0
@@ -12763,6 +12784,7 @@ specifiers:
   eslint-plugin-import: ^2.20.2
   eslint-plugin-vue: ^6.2.2
   firebase: ^7.24.0
+  firebaseui: ^4.7.0
   geckodriver: ^1.20.0
   lint-staged: ^9.5.0
   node-sass: ^4.12.0

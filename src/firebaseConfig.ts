@@ -1,11 +1,11 @@
 export const firebaseConfig = {
-  apiKey: 'AIzaSyDWpWwA9VH8-KRYqPpIkDR0aCuBVkVsNOo',
-  authDomain: 'job-portal-flipr.firebaseapp.com',
-  databaseURL: 'https://job-portal-flipr.firebaseio.com',
-  projectId: 'job-portal-flipr',
-  storageBucket: 'job-portal-flipr.appspot.com',
-  messagingSenderId: '626064367386',
-  appId: '1:626064367386:web:8ae227af162c5fcb9096a3',
+  apiKey: 'AIzaSyAJCh1ReJC4TSc27IIULAlA48N4tewjBX8',
+  authDomain: 'flipr-job-portal.firebaseapp.com',
+  databaseURL: 'https://flipr-job-portal.firebaseio.com',
+  projectId: 'flipr-job-portal',
+  storageBucket: 'flipr-job-portal.appspot.com',
+  messagingSenderId: '30839877054',
+  appId: '1:30839877054:web:56c72bec793c5f3c281def',
 };
 
 export default firebaseConfig;
