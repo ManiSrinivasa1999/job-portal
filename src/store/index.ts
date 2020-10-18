@@ -19,11 +19,7 @@ export default new Vuex.Store({
     storage,
     accessToken: null,
   },
-  mutations: {
-    setUserAccessToken(state, accessToken) {
-      state.accessToken = accessToken;
-    },
-  },
+  mutations: {},
   actions: {},
   modules: {},
 });
