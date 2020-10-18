@@ -2,9 +2,12 @@
   <v-container>
     <v-row>
       <v-col
-        v-for="(job, i) in jobListings"
-        :key="i"
-        cols="4"
+        cols="12"
+        xl="3"
+        lg="4"
+        md="6"
+        sm="12"
+        xs="12"
       >
         <v-card>
         </v-card>
