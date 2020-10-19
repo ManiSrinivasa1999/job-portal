@@ -4,12 +4,34 @@
       <v-col
         v-for="(job, i) in jobs"
         :key="i"
+        cols="12"
+        lg="4"
+        xl="3"
+        md="6"
+        sm="12"
+        xs="12"
       >
-        <v-card>
-          <v-card-title>
-            {{ job.jobtitle }}
+        <v-card color="#3B3DA2">
+          <v-card-title class="white--text">
+            {{ job[1].jobtitle }}
           </v-card-title>
         </v-card>
+      </v-col>
+    </v-row>
+    <v-row justify="center">
+      <v-col
+        cols="12"
+        xl="6"
+        lg="6"
+        md="8"
+        sm="12"
+        xs="12"
+      >
+        <v-pagination
+          v-model="page"
+          class="my-4"
+          :length=length
+        ></v-pagination>
       </v-col>
     </v-row>
   </v-container>
@@ -20,15 +42,20 @@ export default {
   data() {
     return {
       jobs: [],
+      page: 1,
+      length: 2000 / 20,
     };
   },
   mounted() {
     this.$store.state.db.collection('job-data')
-      .limit(5)
+      .limit(1)
       .get()
       .then((querySnapshot) => {
         querySnapshot.forEach((doc) => {
-          this.jobs.push(doc.data());
+          const job = [];
+          job.push(doc.id);
+          job.push(doc.data());
+          this.jobs.push(job);
         });
       });
   },

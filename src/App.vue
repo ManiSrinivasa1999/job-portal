@@ -1,31 +1,25 @@
 <template>
   <!-- App.vue -->
-  <v-app>
-    <v-app-bar app v-if="$vuetify.breakpoint.lgAndUp">
+  <v-app class="app-bar-color">
+    <v-app-bar app v-if="$vuetify.breakpoint.lgAndUp" class="app-bar-color">
       <v-spacer></v-spacer>
       <div class="mr-16 pr-16">
         <v-btn
-          text
-          x-large
+          large
           to="/"
-          class="pa-2 ma-2 btn text-body-2 font-weight-bold "
-          active-class="green--text"
+          class="pa-2 ma-2 btn text-body-2 font-weight-bold primary"
         >
           Home
         </v-btn><v-btn
-          text
-          x-large
+          large
           to="/signin"
-          class="pa-2 ma-2 btn text-body-2 font-weight-bold "
-          active-class="green--text"
+          class="pa-2 ma-2 btn text-body-2 font-weight-bold primary"
         >
           Signin
         </v-btn><v-btn
-          text
-          x-large
+          large
           to="/register"
-          class="pa-2 ma-2 btn text-body-2 font-weight-bold "
-          active-class="green--text"
+          class="pa-2 ma-2 btn text-body-2 font-weight-bold primary"
         >
           Register
         </v-btn>
@@ -101,3 +95,9 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.app-bar-color {
+  background-color: #10163A !important;
+}
+</style>
