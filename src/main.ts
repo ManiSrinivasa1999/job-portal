@@ -9,6 +9,7 @@ import {
   faChevronLeft,
   faChevronRight,
   faChevronUp,
+  faSearch,
 } from '@fortawesome/free-solid-svg-icons';
 import { faGooglePlusG } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
@@ -21,6 +22,7 @@ import vuetify from './plugins/vuetify';
 library.add(
   faGooglePlusG,
   faBars,
+  faSearch,
   faArrowUp,
   faArrowDown,
   faChevronDown,
